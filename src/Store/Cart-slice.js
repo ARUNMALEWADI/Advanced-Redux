@@ -12,7 +12,7 @@ const Cartslice=createSlice({
         { const newitem=action.payload;
             const existingitem=state.items.find(item=>item.id===newitem.id)
             if(!existingitem)
-            {state.items.push({id:newitem.id,price:newitem.price,quantity:1,name:newitem.title,totalprice:newitem.price,name:newitem.title})
+            {state.items.push({id:newitem.id,price:newitem.price,quantity:1,name:newitem.title,totalprice:newitem.price})
                 state.totalquantity+=1;
             }
             else
